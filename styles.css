@@ -1,0 +1,45 @@
+
+#photo-gallary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+
+.image-container {
+  max-width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoom-in {
+  transform: scale(1.5);
+}
+
+
+#button-container {
+  position: relative; 
+  text-align: center; 
+  margin-top: 20px; 
+}
+
+
+button {
+  font-size: 20px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin: 0 10px; 
+}
+
+
+button:hover {
+  background-color: #0056b3;
+}
